@@ -7,7 +7,7 @@ This is a python script written for intended use with AWS Lambda that will take 
 
 The runtime for this script should be Python 3.6.
 
-If you intend to use this script with AWS you will also need to create an API Gateway endpoint. In that API Gateway you will need to creat a POST Method Execution. [Here][1]is a pretty useful reference that will give you an idea on how to do that. Once you've deploed the API you'll need to get the URL to execute the POST method and use that as your webhook URL in your SimpleMDM account. 
+If you intend to use this script with AWS you will also need to create an API Gateway endpoint. In that API Gateway you will need to creat a POST Method Execution. [Here][1] is a pretty useful reference that will give you an idea on how to do that. Once you've deploed the API you'll need to get the URL to execute the POST method and use that as your webhook URL in your SimpleMDM account. 
 
 The script also assumes you're setting the Slack incoming webhook URL via an environment variable in Lambda called `SLACK_URL`. 
 

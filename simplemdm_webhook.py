@@ -24,13 +24,13 @@ def build_message(ploadin):
 
     if event_type == "device.enrolled":
         message = {
-            'text': 'Device ' + event_data['attributes']['serial_number'] + ' has enrolled at ' + event_time
+            'text': 'Device ' + event_data['device']['serial_number'] + ' has enrolled at ' + event_time
         }
         return message
 
     elif event_type == "device.unenrolled":
         message = {
-            'text': 'Device ' + event_data['attributes']['serial_number'] + ' has unenrolled at ' + event_time
+            'text': 'Device ' + event_data['device']['serial_number'] + ' has unenrolled at ' + event_time
         }
         return message
     elif event_type == "test_event":
